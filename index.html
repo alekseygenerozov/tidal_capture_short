@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style type="text/css">
+        p { text-align: left; 
+        } 
+        .reveal section img { background:none; border:none; box-shadow:none; }
+        li {text-align: left;}
+        .reveal h2 {text-align: left;}
+        .reveal h1 {text-align: left;}
+        /*.reveal .slides > section > section { text-align:left; }*/
+/*        .reveal .center {text-align: left;}*/
+        .reveal .lcred {
+    	text-align: left;
+    	font-size: 55% !important;
+		}
+		.figb figcaption {position: absolute; bottom: -50px; text-align: left; font-size: 70%;}
+		.figb2 figcaption {position: absolute; vertical-align: text-top; bottom: 200px; text-align: middle; font-size: 35%;}
+		.figl figcaption {position: absolute; right: 10%; top:150px ; text-align: left; font-size: 60%;}
+    </style> 
+	</head>
+	<body>
+		<div class="reveal">
+		    <!-- In between the <div="reveal"> and the <div class="slides">-->
+			<!-- ====================== BETWEEN REVEAL AND SLIDES ====================== -->
+<!-- 			<header style="position: absolute; left: 10px;"></header> -->
+<!-- 			<header class="right" style="position: absolute; right: 10px;"></header> -->
+			<!-- ====================== BETWEEN REVEAL AND SLIDES ====================== -->
+			<div class="slides">
+<!-- 				<section><h1>X-ray binaries from Tidal Capture in the Galactic Center</h1>
+					<p class="footer">Aleksey Generozov, Nick Stone, Brian Metzger, Jerry Ostriker, 
+					MNRAS, 478, 4030
+					</p>
+				</section> -->
+
+				<section><h2>Exotica from Galactic Nuclei</h2>
+					<figure class=figb>
+						<img src="gw.png" width="700" align="left">
+						<figcaption> Credits: R. Hurt/Caltech-JPL</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<h2>X-ray binaries in the central parsec</h2>
+						<div>
+						<figure class=figb2>
+							<img src="transients.png" width="300" align="left">
+							<figcaption>Muno <i>et al.</i> 2005</figcaption>
+						</figure>
+						</div>
+						<img src="xrbs_hailey.png" height="450">
+				</section>
+
+				<section><h2>Formation</h2>
+				<ul>
+				<li>
+					BH XRBs / $\mathrm{M_*}$ $\sim 10^3$ times field
+				</li>
+				<li>
+					Likely not from (normal) binary evolution
+				</li>
+				<li class=fragment> Dynamical formation </li>
+					<ul>
+						<font color="aqua"><li class=fragment>Tidal capture! (Fabian+1975, Press+Teukolsky1977, Lee+Ostriker 1986) </li></font>
+					</ul>	
+				</ul>
+				</section>
+
+				<section><h2>Tidal capture physics</h2>
+					<img src="tc1.png" width="1000" align="left">
+				</section>
+				
+
+				<section><h2>Tidal capture physics</h2>
+					<img src="tc2.png" width="1000" align="left">
+				</section>
+				
+
+				<section><h2>Bottom line</h2>
+					<ul>
+					<li>
+						Modeling suggests $\sim 10^4$ isolated BHs in central parsec</font></p>
+					</li>
+					</ul>
+					<ul> 
+					<li>
+						Plenty of opportunities for follow-up work exploring consequences of this 
+						population!
+					</li>
+					</ul>
+					<p></p>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				dependencies: [
+				    { src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					// { src: 'plugin/math/math.js', async: true }
+
+				]
+			});
+		</script>
+<!-- 		<script src="pdf.js/src/pdf.js"></script> -->
+	</body>
+</html>
